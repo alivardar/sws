@@ -1,0 +1,41 @@
+- 24.09.2001	:	Web browser üzerinden dosya yazýlmasada index.html
+			gösterilmesi ayarlandý. 5 karakterden küçük dosya
+			adlarý göstermeyecek þekilde ayarlandý.
+
+- 25.09.2001	:	Web server evvelde kullanýcýnýn yetkisine gore
+			istenilen her dizinden dosya indirilmesine izin
+			veriyordu engellendi. Home dizin uygulamaya
+			sokuldu. PHP destegi verildi.(islevsel degil)
+    
+- 01.10.2001	:	/etc/sws/sws.conf icinde artýk bir conf dosyasý
+			mevcut butun hersey oradan okunuyor. Murat Koc beye
+			tesekurler.
+- 19.06.2002	:	Geçte olsa yapýlanlar surum 0.0.4 olarak sunuldu.
+
+- 27.08.2002	:	0.1.0 surume gecildi. surum numarasinin birden atlama
+			sebebi php kaldirildi. bundan sonra eklenmeyecek zira
+			php ile ileride ayri olarak ilgilenilecek.
+			image gonderilme sorunlari giderildi. Static sayfalarda
+			son derece hizli olarak goruntu verilebilmektedir.
+			Kod ierisinde mumkun oldugu kadar temizlik yapildi. BOF cikma
+			ihtimalli bir iki yer duzeltildi. Artik cok uzun dahi olsa dosya
+			transferlerinde ve resim transferlerinde sorun yasanmiyor.
+			Bos olan dizinlerde varsayilan sayfa aranmasý eklendi.
+			Uygunsuz kesilmelerde acýk kalan soket kapatýlma iþlemleri
+			yapýldý. (CTRL+C SIG KILL)
+
+- 02.09.2002	:	Mert tarafýndan yazýlan 0.1.0 sürüm çalýþan sws_web_server
+			çakan exploit düzeltilmesi yapýldý. SIGTERM eklendi.
+
+- 09.09.2002	:	Mehmet GOCER loglama sistemini yazdi tesekkur ederim.
+			Baslatma scripti yazildi. 
+
+- 10.09.2002	:	Securiteam grubundan gelen mail ile bir cok guvenlik acigi ve
+			hata duzeltildi.
+
+- 05.04.2003	:	Slackware icin kurulum hazirlandi. Make install denilmesi durumunda
+			artik ilgili dizine baslatma scriptini yerlesitiriyor.
+			Uygulama kullanici ve group degitirilebilir oldu.
+
+- 12.07.2005    :	ihsan topaloglu gonderdigi yama dosyalarin transfer problemini
+			duzeltti.

@@ -1,0 +1,40 @@
+Türkçe
+------
+M.Ali VARDAR
+ali@linuxprogramlama.com www.linuxprogramlama.com
+Sws Web Server
+
+./make 
+./make install
+
+Kurulum için /etc/sws dizini oluþturunuz.
+/etc/sws dizini içerisine sws.conf dosyasýný kopyalayýnýz.
+Daha sonra gerekli ayarlarý sws.conf içinde yapýnýz.
+
+Baslatmak icin /etc/rc.d/init.d/sws_web_server.init start/stop/restart
+
+Uygulamayi sistemden kaldirmak icin
+
+./make uninstall
+
+
+English
+-------
+
+./make
+./make install
+
+For start   
+Redhat and Debian users
+/etc/init.d/sws_web_server.init start
+
+slackware users
+/etc/rc.d/init.d/rc.sws start
+
+First create /etc/sws directory
+sws.conf file copy in to /etc/sws
+Edit sws.conf
+
+for unistall
+
+./make unistall

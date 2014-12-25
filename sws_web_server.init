@@ -1,0 +1,49 @@
+#!/bin/bash
+#
+# M.Ali VARDAR 2002-2003
+# SWS_WEB_SERVER Start Script
+#
+# processname: sws_web_server
+# config: /etc/sws_web_server/sws_web_server.conf
+# pidfile: /var/run/sws_web_server/sws_web_server.pid
+# 
+
+prog="sws_web_server"
+
+start()
+{
+	/usr/local/bin/sws_web_server &
+	pidof $prog > /var/run/sws_web_server/sws_web_server.pid
+	echo $prog started.
+	return $ret
+}
+
+stop(){
+        /bin/kill `cat /var/run/sws_web_server/sws_web_server.pid` > /dev/null 2>&1
+	echo $prog stopped.
+	return $ret
+}
+
+
+restart(){
+    stop
+    start
+}
+
+
+case "$1" in
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  restart)
+    restart
+    ;;  
+  *)
+    echo $"Usage: $0 {start|stop|restart}"
+    exit 1
+esac
+
+exit $?
